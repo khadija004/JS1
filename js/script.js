@@ -1,11 +1,26 @@
+//TASK1
 
-let date = new Date().getHours();
-console.log(date);
-if(date<=6){
-    let div = document.getElementById('first');
-    div.style.backgroundColor='black'
-}
-else{
-    let div= document.getElementById('first');
-    div.style.backgroundColor='white';
+
+// function Confirm() {
+//     let text = "Seciminizi edin\nEither OK or Cancel.";
+//     let body= document.getElementById('Confirm')
+//     if (confirm(text) == true) {
+//         body.style.backgroundColor='black'
+//     } else {
+//       body.style.backgroundColor='white'
+//     }
+//   }
+
+
+//TASK2
+
+function Check(){
+    let age = prompt("Yasinizi daxil edin");
+  if (age < 18) {
+    document.getElementById("demo").innerHTML =
+    "Yasiniz catmir";
+  }
+  else{
+      document.getElementById('demo').innerHTML="Daxil oldunuz"
+  }
 }
